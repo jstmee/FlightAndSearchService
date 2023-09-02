@@ -1,45 +1,23 @@
-- src/
-     index.js // server 
-     models/ 
-     controllers/ 
-     middlewares/ 
-     services/ 
-     utils/ 
-     config/ 
-     respository/ 
-- tests/ [later] 
-- static/ 
-- temp/
 
-#steps 1 (completed)
-1.install the necessary package:
--body-parser
--express
--nodemon
+# welcome to flight service
 
-#step 2 (completed)
-1.using express create server at some port.
+## project setup
+ -Clone the project on local
+ -Execute `npm install` on the same path as of your root directory of teh downloaded project.
+ -Create a `.env` file in the root directory and add the following environment variable .
+    -`PORT=3000`
+ -Inside the `src/config` folder create a new file `config.json` and then add the following piece of json
 
-#step 3 (completed)
-1.write scripts in package.json for nodemon
-"start":"npx nodemon src/index"
+ ```
+ {
+  "development": {
+    "username": <YOUR_DB_LOGIN_NAME>,
+    "password": <YOUR_DB_PASSWORD>,
+    "database": "Flights_Search_DB_DEV",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
 
-#step 4 setup the environment (completed)
-1.for this install npm dotenv package to make .env file for making port.
-2.make .env file outside src and assign value example port=3000.
-3.make config file for accessing port from dotenv process.
-
-#step 5 setup the body parser(completed)
-
-#step 6 seting up the orm tools
--sequalize(orm map model into object oriented model for mysql for mysql,sql server ,postgre etc.)
--sequalize cli (set up all the database configurations.)
--mysql2 (help in connecting with mysql server.)
-1.install all this packages
-2.in root folder do the npx sequelize init it create folder move all the thing in src.
-3.in config write the password and database name.
-4.to create a database npx sequelize db:create
-
-
-
+ ```
 
