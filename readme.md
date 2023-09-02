@@ -23,3 +23,5 @@ using express create server at some port
 #step 3
 write scripts in package.json for nodemon
 "start":"npx nodemon src/index"
+
+
