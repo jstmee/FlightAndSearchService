@@ -29,4 +29,6 @@
 2.make .env file outside src and assign value example port=3000.
 3.make config file for accessing port from dotenv process.
 
+#step 5 setup the body parser
+
 
