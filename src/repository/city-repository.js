@@ -70,6 +70,17 @@ class CityRepository{
 
 
     }
+    async getAllCities(){
+        try {
+            const cities=await City.findAll();
+            return cities;
+            
+        } catch (error) {
+            console.log("something went wrong in repository");
+            throw {error};
+            
+        }
+    }
 }
 
 module.exports=CityRepository;

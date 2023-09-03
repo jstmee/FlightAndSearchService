@@ -72,7 +72,9 @@
   # step 8 make city repo,city service and citycontroller api
 
   # step 9 setup the routings
-  - user of routes folder and routing
+  - user of routes folder and routing.
+
+  # step 10 association in api models i.e relationship
   
 
     
