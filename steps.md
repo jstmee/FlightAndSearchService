@@ -85,6 +85,25 @@
     - then setup the association in both model class in association field.
     - and also to the migration file.
     - the do the command `npx sequelize db:migrate`
+    - how to create a seeder file for popualting the data
+     `npx sequelize seed:generate --name add-airports`
+    - all the datas in that file and do the command `npx sequelize db:seed:all`
+
+    - wht is db syncronization?
+     cities with other association table help in getting this.
+     in .env write SYNC.DB:true
+     `
+     const db=require('./models/index');
+     if(process.env.SYNC_DB){
+            db.sequelize.sync({alter:true});
+        }
+  
+   `
+# step 11  task
+    -  expose an api to that can add multiple cities in one go(maybee pass an array in request body,no loop at all).
+    - write a crud for airport.
+    - add an api in city resources for getting all the airport of the city.
+
   
 
     

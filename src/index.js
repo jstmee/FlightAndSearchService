@@ -7,6 +7,8 @@ const {PORT}=require('./config/serverConfig');
 
 const ApiRoutes=require('./routes/index');
 
+const db=require('./models/index');
+
 
 // an anonymous arrow function for starting server
 const setupAndStartServer=async()=>{
@@ -24,6 +26,9 @@ const setupAndStartServer=async()=>{
 
     app.listen(PORT,()=>{
         console.log(`Server started at port ${PORT}`);
+        if(process.env.SYNC_DB){
+            db.sequelize.sync({alter:true});
+        }
     });
 
 
