@@ -5,6 +5,7 @@ const bodyParser=require("body-parser");
 
 const {PORT}=require('./config/serverConfig');
 
+
 // an anonymous arrow function for starting server
 const setupAndStartServer=async()=>{
 
