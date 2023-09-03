@@ -105,6 +105,7 @@
     - add an api in city resources for getting all the airport of the city.
 
 # step 12 
+  - airplane modelNumber,capacity
   - build airplane model `npx sequelize model:generate --name Airplane --attributes modelNumber:String,capacity:integer` 
   - seed airplane model
 
