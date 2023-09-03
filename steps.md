@@ -108,6 +108,8 @@
   - airplane modelNumber,capacity
   - build airplane model `npx sequelize model:generate --name Airplane --attributes modelNumber:String,capacity:integer` 
   - seed airplane model
+  - flights 
+  - build flight model `npx sequelize model:generate --name Flight --attributes flightNumber:String,airplaneId:integer,departureAirportId:integer,arrivalAirportId:integer,arrivalTime:Date,departureTime:Date,price:integer,boardingGate:String,totalSeats:integer`
 
   
 
