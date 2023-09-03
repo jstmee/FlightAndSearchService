@@ -5,6 +5,8 @@ const bodyParser=require("body-parser");
 
 const {PORT}=require('./config/serverConfig');
 
+const ApiRoutes=require('./routes/index');
+
 
 // an anonymous arrow function for starting server
 const setupAndStartServer=async()=>{
@@ -18,7 +20,7 @@ const setupAndStartServer=async()=>{
     // parse application/x-www-form-urlencoded
     app.use(bodyParser.urlencoded({ extended: false }));
 
-    
+    app.use('/api',ApiRoutes);
 
     app.listen(PORT,()=>{
         console.log(`Server started at port ${PORT}`);
