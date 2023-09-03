@@ -72,6 +72,7 @@
   # step 8 make city repo,city service and citycontroller api
 
   # step 9 setup the routings
+  - user of routes folder and routing
   
 
     
