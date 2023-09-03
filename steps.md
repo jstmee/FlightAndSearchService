@@ -81,6 +81,10 @@
       ### City -> id, name, created_at, updated_at
       ### Airport -> id, name, address, city_id, created_at, updated_at
           Relationship -> City has many airports and Airport belongs to a city (one to many)
+    - to create a model airport `npx sequelize model:generate --name Airport --attributes name:String,address:String,cityId:integer`
+    - then setup the association in both model class in association field.
+    - and also to the migration file.
+    - the do the command `npx sequelize db:migrate`
   
 
     
