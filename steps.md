@@ -65,6 +65,7 @@
   - airplane 1 to many flight
   - city    1 to many       airport
   - airport 1 to many flight
+
   - for creating a model command is npx sequelize model:generate --name City --attributes name:String
   - it created model class city and add migration change every thing as required as per need.
   - then run npx sequelize db:migrate it run the migration file and create tables according ot migration files and alo undo it using different command.
@@ -75,6 +76,11 @@
   - user of routes folder and routing.
 
   # step 10 association in api models i.e relationship
+    ## Tables
+
+      ### City -> id, name, created_at, updated_at
+      ### Airport -> id, name, address, city_id, created_at, updated_at
+          Relationship -> City has many airports and Airport belongs to a city (one to many)
   
 
     
