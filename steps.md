@@ -40,6 +40,34 @@
 - in config write the password and database name.
 - to create a database npx sequelize db:create
 
+# step 7 build the models
+  - airplane table
+    - id
+    - model number
+    - capacity
+  - flight
+    - id
+    - departure city id
+    - arrival city id
+    - airplane id
+    - departure time
+    - arrival time
+    - flight number
+  - airport
+    - id
+    - name
+    - city_id
+    - address
+  - city
+    - id
+    - name
+
+  - airplane 1 to many flight
+  - city    1 to many       airport
+  - airport 1 to many flight
+    
+
+
 
 
 
