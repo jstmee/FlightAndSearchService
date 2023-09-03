@@ -68,6 +68,9 @@
   - for creating a model command is npx sequelize model:generate --name City --attributes name:String
   - it created model class city and add migration change every thing as required as per need.
   - then run npx sequelize db:migrate it run the migration file and create tables according ot migration files and alo undo it using different command.
+
+  # step 8 make city repo,city service and citycontroller
+  
     
 
 
