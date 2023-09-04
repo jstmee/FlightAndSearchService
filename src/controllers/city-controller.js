@@ -32,7 +32,7 @@ const create=async (req,res)=>{
 }
 
 //delete ->/city/:id
-const destory=async(req,res)=>{
+const destroy=async(req,res)=>{
 
     try {
 
@@ -136,7 +136,7 @@ const getAll= async (req,res)=>{
 
 module.exports={
     create,
-    destory,
+    destroy,
     get,
     update,
     getAll
